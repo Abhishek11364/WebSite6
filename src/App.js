@@ -6,10 +6,11 @@ import Category from "./components/Category/Category";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import "./style.css";
-
+import AppContext from "./utils/context";
 export default function App() {
   return (
     <BrowserRouter>
+    <AppContext>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ export default function App() {
       </Routes>
       <Newsletter />
       <Footer />
+      </AppContext>
     </BrowserRouter>
   );
 }
