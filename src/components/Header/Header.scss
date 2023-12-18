@@ -7,6 +7,7 @@
   color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 99;
+  @i
 
   .header-content {
     display: flex;
@@ -40,6 +41,21 @@
       svg {
         font-size: 20px;
         cursor: pointer;
+      }
+      .cart-icon {
+        position: relative;
+        span {
+          min-width: 20px;
+          text-align: center;
+          background-color: #8e2de2;
+          padding: 2.5px;
+          position: absolute;
+          top: -5px;
+          right: -12px;
+          font-size: 12px;
+          line-height: 1;
+          border-radius: 10px;
+        }
       }
     }
   }
